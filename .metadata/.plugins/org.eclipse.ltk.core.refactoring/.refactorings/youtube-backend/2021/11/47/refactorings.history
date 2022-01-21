@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract constant &apos;BUCKET_NAME&apos; from expression &apos;&quot;Here the bucket name&quot;&apos;&#x0D;&#x0A;- Original project: &apos;youtube-backend&apos;&#x0D;&#x0A;- Constant name: &apos;BUCKET_NAME&apos;&#x0D;&#x0A;- Constant expression: &apos;&quot;Here the bucket name&quot;&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Replace occurrences of expression with constant" description="Extract constant &apos;BUCKET_NAME&apos;" flags="786432" id="org.eclipse.jdt.ui.extract.constant" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.youtube.service{AWS3SService.java" name="BUCKET_NAME" qualify="false" replace="true" selection="1208 22" stamp="1637365187854" version="1.0" visibility="2"/>
+</session>

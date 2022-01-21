@@ -1,0 +1,21 @@
+package com.youtube.model;
+
+import java.util.List;
+import java.util.Set;
+
+public class User {
+	
+	private String id;
+	private String firstName;
+	private String lastName;
+	private String fullName;
+	private String emailAdress;
+	private Set<String> subscribedToUsers;
+	private Set<String> subscribers;
+	private List<String> videoHistory;
+	private Set<String> likedVideos;
+	private Set<String> dislikedVideos;
+	
+	
+
+}

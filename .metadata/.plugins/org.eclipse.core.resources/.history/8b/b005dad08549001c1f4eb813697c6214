@@ -1,0 +1,9 @@
+package com.youtube.model;
+
+public class Comment {
+	private String id;
+	private String text;
+	private String authorId;
+	private Integer likes;
+	private Integer dislikes;
+}

@@ -1,0 +1,5 @@
+package com.youtube.service;
+
+public class VideoService {
+
+}

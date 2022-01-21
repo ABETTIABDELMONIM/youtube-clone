@@ -1,0 +1,14 @@
+package com.youtube.service;
+
+import org.springframework.web.multipart.MultipartFile;
+
+public class AWS3SService implements StorageService{
+
+	@Override
+	public void uploadFile(MultipartFile f) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

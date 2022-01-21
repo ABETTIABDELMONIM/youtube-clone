@@ -1,0 +1,13 @@
+package com.youtube;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+
+@SpringApplicationConfiguration
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+
+}

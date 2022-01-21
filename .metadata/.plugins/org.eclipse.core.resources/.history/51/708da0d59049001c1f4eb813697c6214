@@ -1,0 +1,37 @@
+package com.youtube.service;
+
+import java.io.IOException;
+import java.util.UUID;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.server.ResponseStatusException;
+
+import com.amazonaws.AmazonServiceException;
+import com.amazonaws.SdkClientException;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.ObjectMetadata;
+
+public class AWS3SService implements StorageService{
+	
+	private final AmazonS3Client aws3Client ;
+
+	@Override
+	public void uploadFile(MultipartFile f) {
+		var fileNameExtension = f.getOriginalFilename();
+		var key = UUID.randomUUID() + fileNameExtension;
+		var metaData=  new ObjectMetadata();
+		metaData.setContentLength(f.getSize());
+		metaData.setContentType(f.getContentType());
+		
+		try {
+			aws3Client.putObject("Here the bucket name",key,f.getInputStream(),metaData);
+		} catch (IOException e) {
+			throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,
+					"An execption occured while uploading the file");
+		}
+		
+	}
+	
+
+}
